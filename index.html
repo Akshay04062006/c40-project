@@ -7,10 +7,11 @@
 <!--Link game.js and player.js-->
 <script src="js/game.js"></script>
 <script src="js/player.js"></script>
-   
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
 <!--Add database config here below-->
+<script>
 const firebaseConfig = {
   apiKey: "AIzaSyDpD3OgpKSd1PrOvJUvR6OZT-Fwc8V-KmU",
   authDomain: "fruit-collector-1-e5098.firebaseapp.com",
@@ -20,6 +21,8 @@ const firebaseConfig = {
   messagingSenderId: "1094807220201",
   appId: "1:1094807220201:web:c37d0c1999da05ecf42578"
 };
+firebase.initializeApp(firebaseConfig)
+</script>
   
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
